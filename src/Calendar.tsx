@@ -1,11 +1,11 @@
 const Calendar: React.FC = () => {
   return (
     <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-      <div className="flex flex-col grow justify-center p-5 w-full bg-zinc-800 rounded-[30px] max-md:mt-5 max-md:max-w-full">
-        <div className="flex flex-col pt-5 w-full rounded-3xl bg-zinc-900">
-          <div className="flex gap-5 justify-between mx-5 text-white max-md:mx-2.5">
+      <div className="flex flex-col grow justify-center p-5 w-full bg-secondaryMain rounded-[30px] max-md:mt-5 max-md:max-w-full">
+        <div className="flex flex-col pt-5 w-full rounded-3xl bg-thirdMain">
+          <div className="flex gap-5 justify-between mx-5 text-primaryMain max-md:mx-2.5">
             <h2 className="my-auto text-2xl font-semibold tracking-tighter">MAY 2024</h2>
-            <div className="flex gap-3 justify-center px-4 py-2 text-sm font-medium leading-5 bg-zinc-800 rounded-[99px]">
+            <div className="flex gap-3 justify-center px-4 py-2 text-sm font-medium leading-5 bg-secondaryMain rounded-[99px]">
               <div>All Projects</div>
               <img
                 loading="lazy"
@@ -16,7 +16,7 @@ const Calendar: React.FC = () => {
             </div>
           </div>
           <div className="flex gap-5 mx-5 mt-5 max-md:mx-2.5">
-            <div className="flex flex-col self-start text-sm leading-5 text-white whitespace-nowrap">
+            <div className="flex flex-col self-start text-sm leading-5 text-primaryMain whitespace-nowrap">
               <div>11</div>
               <div className="mt-6">12</div>
               <div className="mt-6">13</div>
@@ -28,8 +28,8 @@ const Calendar: React.FC = () => {
             </div>
           </div>
           <div className="flex z-10 flex-col mb-0 max-md:mb-2.5">
-            <h3 className="text-2xl font-semibold tracking-tighter text-white">Stay on Schedule</h3>
-            <p className="mt-2 text-base leading-6 text-ellipsis text-white text-opacity-70">
+            <h3 className="text-2xl font-semibold tracking-tighter text-primaryMain">Stay on Schedule</h3>
+            <p className="mt-2 text-base leading-6 text-ellipsis text-primaryMain text-opacity-70">
               Effortlessly synchronize with multiple calendar platforms to ensure every deadline and meeting is
               perfectly aligned with your team's schedule
             </p>

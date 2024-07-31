@@ -25,7 +25,7 @@ const Efficiency: React.FC = () => {
   ]
 
   return (
-    <div className="mt-5 max-md:max-w-full">
+    <div className="max-md:max-w-full">
       <div className="flex gap-5 max-md:flex-col">
         {efficiencyItems.map((item, index) => (
           <EfficiencyCard key={index} {...item} />
