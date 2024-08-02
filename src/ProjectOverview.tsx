@@ -24,7 +24,7 @@ const ProjectOverview: React.FC = () => {
 
   return (
     <div className="flex flex-col w-[36%] max-md:ml-0 max-md:w-full">
-      <div className="flex flex-col self-stretch my-auto text-base font-medium text-white max-md:mt-10 max-md:max-w-full">
+      <div className="flex flex-col self-stretch my-auto text-base font-medium text-primaryMain max-md:mt-10 max-md:max-w-full">
         <div className="flex gap-2 self-start px-3 py-1 text-sm leading-5 rounded-lg border border-solid shadow backdrop-blur-[10px] bg-white bg-opacity-10 border-white border-opacity-20">
           <div>New Mobile App Launched!</div>
           <img
@@ -37,12 +37,12 @@ const ProjectOverview: React.FC = () => {
         <h1 className="mt-5 text-6xl font-semibold tracking-tighter max-md:max-w-full max-md:text-4xl">
           All-in-One Project Management
         </h1>
-        <p className="mt-5 leading-6 text-white text-opacity-70 max-md:max-w-full">
+        <p className="mt-5 leading-6 text-primaryMain text-opacity-70 max-md:max-w-full">
           Streamline your meetings, manage projects efficiently, and optimize your workflow—all in one place
         </p>
         <div className="flex gap-5 mt-5 text-center leading-[150%] max-md:flex-wrap">
           <button className="px-5 py-2.5 rounded-xl">Get Started</button>
-          <button className="px-5 py-2.5 rounded-xl bg-zinc-900">See Our Feature</button>
+          <button className="px-5 py-2.5 rounded-xl bg-thirdMain">See Our Feature</button>
         </div>
       </div>
     </div>

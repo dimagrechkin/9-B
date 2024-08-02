@@ -24,6 +24,16 @@
   margin-left: 5px;
   color: yellow; /* Or your desired star color */
 }
+
+.privacy-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: violet;
+  z-index: 2;
+}
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

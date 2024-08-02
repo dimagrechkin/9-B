@@ -1,40 +1,46 @@
-import FeatureCard from './FeatureCard'
 import { motion } from 'framer-motion'
+
+import FeatureCard from './FeatureCard'
+import TextSlider from './TextSlider'
+import img1 from './assets/image1.jpg'
+import img2 from './assets/image2.jpg'
+import img3 from './assets/image3.jpg'
+import img4 from './assets/image4.jpg'
+import img5 from './assets/image5.jpg'
+import img6 from './assets/image6.jpg'
+import Lines from './Lines'
 
 const Features: React.FC = () => {
   const features = [
     {
-      title: 'Streamline Your Workflow',
+      title: 'Unleash Your Inner Tommy Pickles',
       description:
-        'Simplify your project management with intuitive tools designed to enhance productivity and keep your team aligned',
-      imageSrc:
-        'https://cdn.builder.io/api/v1/image/assets/TEMP/53b996a6600df3526161e17ee88c3fd7505f09a6f7bcc84e36803be391ebd5c6?apiKey=596c4d4628c64f41b2a2cc62092b3a60&&apiKey=596c4d4628c64f41b2a2cc62092b3a60',
+        'Simplify your project management with tools as intuitive as Angelicas schemes. Keep your team aligned and productive, just like the Rugrats on a grand adventure.',
+      imageSrc: img1,
     },
     {
-      title: 'Collaborate Seamlessly',
+      title: 'Collaborate Like Chuckie & Tommy',
       description:
-        'Foster collaboration with real-time updates and communication tools that keep everyone on the same page',
-      imageSrc:
-        'https://cdn.builder.io/api/v1/image/assets/TEMP/a2c1aaf5e27f1a43a7962d03f6830cfbb1082da3f59ba5a037c3f2ad3a8c1d7e?apiKey=596c4d4628c64f41b2a2cc62092b3a60&&apiKey=596c4d4628c64f41b2a2cc62092b3a60',
+        'Foster real-time collaboration with communication tools thatll have everyone on the same page, even if you are exploring the backyard.',
+      imageSrc: img2,
     },
     {
-      title: 'Optimize Task Management',
+      title: 'Optimize Tasks Like a Reptar Rampage',
       description:
-        'Prioritize tasks efficiently and ensure timely project delivery with our advanced tracking features',
-      imageSrc:
-        'https://cdn.builder.io/api/v1/image/assets/TEMP/c43521ca1450b9a4c051731979274a9dfd0271fe84622b289bea909b63aee9ad?apiKey=596c4d4628c64f41b2a2cc62092b3a60&&apiKey=596c4d4628c64f41b2a2cc62092b3a60',
+        'Prioritize tasks efficiently and ensure timely project delivery with our features that are as advanced as a Reptar toy.',
+      imageSrc: img3,
     },
     {
-      title: 'Enhance Team Performance',
-      description: "Boost your team's performance with clear goals, streamlined processes, and insightful analytics",
-      imageSrc:
-        'https://cdn.builder.io/api/v1/image/assets/TEMP/4e1868a9a8810def45d563c600545dbfea5b3572f03178f9b9bae8e1661dd5a9?apiKey=596c4d4628c64f41b2a2cc62092b3a60&&apiKey=596c4d4628c64f41b2a2cc62092b3a60',
+      title: 'Enhance Team Performance, Rugrats Style',
+      description:
+        "Boost your team's performance with clear goals and streamlined processes. We'll give you the insights you need to lead like a true Tommy Pickles.",
+      imageSrc: img4,
     },
     {
-      title: 'Enhance Team Performance',
-      description: "Boost your team's performance with clear goals, streamlined processes, and insightful analytics",
-      imageSrc:
-        'https://cdn.builder.io/api/v1/image/assets/TEMP/e4b56bd9c3d6862be258609223c806f3c1d605879a98f31902e0aa679c84f5f9?apiKey=596c4d4628c64f41b2a2cc62092b3a60&&apiKey=596c4d4628c64f41b2a2cc62092b3a60',
+      title: 'Maximize Efficiency with Tools Even Angelica Approves Of',
+      description:
+        "Maximize project efficiency with our advanced management tools. We'll help you enhance team collaboration and streamline workflows faster than a Rugrats diaper change.",
+      imageSrc: img5,
     },
   ]
 
@@ -43,7 +49,7 @@ const Features: React.FC = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex flex-col px-5 pt-6 pb-5 mt-5 bg-zinc-800 rounded-[50px] max-md:max-w-full"
+      className="flex flex-col px-5 pt-6 pb-5 mt-5 bg-secondaryMain rounded-[50px] max-md:max-w-full"
     >
       <motion.div
         initial={{ opacity: 0 }}
@@ -51,13 +57,14 @@ const Features: React.FC = () => {
         transition={{ delay: 0.2, duration: 0.5 }}
         className="flex gap-5 justify-center self-center px-5 max-md:flex-wrap"
       >
-        <h2 className="flex-1 text-3xl font-semibold tracking-tighter text-white">
-          Unleash Efficiency in Project Management
+        <h2 className="flex-1 text-3xl font-semibold tracking-tighter text-primaryMain">
+          Reptar-Sized Results in Project Management
         </h2>
-        {/* <p className="flex-1 text-base leading-6 text-white text-opacity-70">
+        {/* <p className="flex-1 text-base leading-6 text-primaryMain text-opacity-70">
               Plan and organize your entire project work from start to finish. Communicate and collaborate with your management team.
             </p> */}
       </motion.div>
+
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -77,6 +84,12 @@ const Features: React.FC = () => {
           ))}
         </div>
       </motion.div>
+      <div className="relative">
+        <Lines />
+      </div>
+      <div className="relative">
+        <TextSlider />
+      </div>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

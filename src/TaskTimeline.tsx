@@ -1,13 +1,13 @@
 const TaskTimeline: React.FC = () => {
   return (
     <div className="flex flex-col ml-5 w-[64%] max-md:ml-0 max-md:w-full">
-      <div className="flex flex-col grow w-full bg-black rounded-2xl border border-black border-solid shadow-[0px_30px_60px_rgba(0,0,0,0.41)] max-md:mt-10 max-md:max-w-full">
+      <div className="flex flex-col grow w-full bg-backgroundMain rounded-2xl border border-backgroundMain border-solid shadow-[0px_30px_60px_rgba(0,0,0,0.41)] max-md:mt-10 max-md:max-w-full">
         <div className="flex gap-5 justify-between p-2.5 w-full bg-neutral-900 max-md:flex-wrap max-md:max-w-full">
           <div className="flex flex-col justify-center px-1.5 py-2.5">
             <div className="shrink-0 bg-amber-300 rounded-full h-[7px]" />
           </div>
-          <div className="flex gap-5 justify-between self-start px-2 py-0.5 bg-zinc-800 rounded-[31px]">
-            <div className="flex gap-2 my-auto text-xs font-medium text-center whitespace-nowrap text-white text-opacity-70">
+          <div className="flex gap-5 justify-between self-start px-2 py-0.5 bg-secondaryMain rounded-[31px]">
+            <div className="flex gap-2 my-auto text-xs font-medium text-center whitespace-nowrap text-primaryMain text-opacity-70">
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/4d4ff470c788e4e654c94a885f9a8ddde560e3940309b60e8392aa6b1cdf7f14?apiKey=596c4d4628c64f41b2a2cc62092b3a60&&apiKey=596c4d4628c64f41b2a2cc62092b3a60"
@@ -59,8 +59,8 @@ const TaskTimeline: React.FC = () => {
               className="aspect-[0.11] w-[50px]"
             />
           </div>
-          <div className="flex flex-col flex-1 py-3 bg-zinc-900">
-            <div className="flex flex-col px-3 text-xs text-white font-[590]">
+          <div className="flex flex-col flex-1 py-3 bg-thirdMain">
+            <div className="flex flex-col px-3 text-xs text-primaryMain font-[590]">
               <div className="flex gap-0.5 text-xs font-medium whitespace-nowrap">
                 <img
                   loading="lazy"
@@ -70,7 +70,7 @@ const TaskTimeline: React.FC = () => {
                 />
                 <div>Projects</div>
               </div>
-              <div className="flex justify-between px-2 py-0.5 mt-2.5 tracking-tight rounded-lg bg-zinc-800">
+              <div className="flex justify-between px-2 py-0.5 mt-2.5 tracking-tight rounded-lg bg-secondaryMain">
                 <div className="flex flex-1 gap-1.5 p-1.5">
                   <img
                     loading="lazy"
@@ -87,7 +87,7 @@ const TaskTimeline: React.FC = () => {
                   className="shrink-0 my-auto w-3 aspect-[0.93]"
                 />
               </div>
-              <div className="flex justify-between px-2 py-0.5 mt-2.5 tracking-tight whitespace-nowrap rounded-lg bg-zinc-800">
+              <div className="flex justify-between px-2 py-0.5 mt-2.5 tracking-tight whitespace-nowrap rounded-lg bg-secondaryMain">
                 <div className="flex flex-1 gap-1.5 p-1.5">
                   <img
                     loading="lazy"
@@ -104,7 +104,7 @@ const TaskTimeline: React.FC = () => {
                   className="shrink-0 my-auto w-3 aspect-[0.93]"
                 />
               </div>
-              <div className="flex justify-between px-2 py-0.5 mt-2.5 tracking-tight rounded-lg bg-zinc-800">
+              <div className="flex justify-between px-2 py-0.5 mt-2.5 tracking-tight rounded-lg bg-secondaryMain">
                 <div className="flex flex-1 gap-1.5 p-1.5">
                   <img
                     loading="lazy"
@@ -121,7 +121,7 @@ const TaskTimeline: React.FC = () => {
                   className="shrink-0 my-auto w-3 aspect-square"
                 />
               </div>
-              <div className="flex justify-between px-2 py-0.5 mt-2.5 tracking-tight rounded-lg bg-zinc-800">
+              <div className="flex justify-between px-2 py-0.5 mt-2.5 tracking-tight rounded-lg bg-secondaryMain">
                 <div className="flex flex-1 gap-1.5 px-1.5 py-2">
                   <img
                     loading="lazy"
@@ -152,10 +152,10 @@ const TaskTimeline: React.FC = () => {
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/26cd2ddf3c52230a332a8d78eab94339d8b1497ce8f2c8adf7367a73135e1603?apiKey=596c4d4628c64f41b2a2cc62092b3a60&&apiKey=596c4d4628c64f41b2a2cc62092b3a60"
               alt="Project timeline"
-              className="self-center mt-3 bg-blend-normal aspect-[100] border-black border-opacity-10 w-[200px]"
+              className="self-center mt-3 bg-blend-normal aspect-[100] border-backgroundMain border-opacity-10 w-[200px]"
             />
             <div className="flex flex-col px-3 mt-3">
-              <h2 className="text-xs font-medium text-white">Team Members</h2>
+              <h2 className="text-xs font-medium text-primaryMain">Team Members</h2>
               {[
                 {
                   name: 'Maxime Levesque',
@@ -185,7 +185,7 @@ const TaskTimeline: React.FC = () => {
               ].map((member, index) => (
                 <div
                   key={index}
-                  className="flex justify-between px-2 py-0.5 mt-3 tracking-tight rounded-lg bg-zinc-800"
+                  className="flex justify-between px-2 py-0.5 mt-3 tracking-tight rounded-lg bg-secondaryMain"
                 >
                   <div className="flex flex-1 gap-1.5 py-px pl-1.5">
                     <img
@@ -195,8 +195,8 @@ const TaskTimeline: React.FC = () => {
                       className="shrink-0 my-auto aspect-square w-[15px]"
                     />
                     <div className="flex flex-col flex-1">
-                      <div className="text-xs text-white font-[590]">{member.name}</div>
-                      <div className="text-xs whitespace-nowrap text-white text-opacity-70">{member.status}</div>
+                      <div className="text-xs text-primaryMain font-[590]">{member.name}</div>
+                      <div className="text-xs whitespace-nowrap text-primaryMain text-opacity-70">{member.status}</div>
                     </div>
                   </div>
                   <img
