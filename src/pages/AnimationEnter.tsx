@@ -2,7 +2,7 @@ import { motion, useIsPresent } from 'framer-motion'
 
 import AnimationMain from '../AnimationMain'
 
-const AnimationEnter: React.FC = () => {
+const AnimationEnter: React.FC = ({ play }) => {
   const isPresent = useIsPresent()
   return (
     <>
@@ -13,7 +13,7 @@ const AnimationEnter: React.FC = () => {
         style={{ originX: isPresent ? 0 : 1 }}
         className="privacy-screen"
       />
-      <AnimationMain />
+      <AnimationMain play={play} />
     </>
   )
 }
