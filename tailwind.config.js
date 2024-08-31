@@ -3,6 +3,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        galindo: ['Galindo', 'sans-serif'],
+      },
       colors: {
         backgroundMain: '#FCF5E3',
         primaryMain: '#990000',

@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 .explore-line {
   display: flex;
   gap: 10px; /* Adjust spacing */
@@ -24,15 +25,22 @@
   margin-left: 5px;
   color: yellow; /* Or your desired star color */
 }
-
+body {
+  background-color: rgb(68, 255, 0);
+}
 .privacy-screen {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: violet;
+  background-color: rgb(6, 231, 6);
   z-index: 2;
+}
+
+@font-face {
+  font-family: "Galindo";
+  src: url("/Galindo-Regular.ttf")
 }
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

